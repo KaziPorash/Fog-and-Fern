@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fog &amp; Fern — thoughtfully chosen houseplants and everyday growing essentials. A CSC 317 student storefront prototype."
+    />
+    <meta name="theme-color" content="#243f32" />
+    <title>Zebra Haworthia | Fog &amp; Fern</title>
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/catalog.js" defer></script>
+    <script src="/js/cart.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/product.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">
+      A greener kind of everyday <span aria-hidden="true">✦</span> Free practice
+      delivery on orders $75+
+    </div>
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="brand" href="/index.html" aria-label="Fog and Fern home"
+          ><svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 4C7 2 2 9 6 16s15 3 13-12Z" />
+            <path d="M4 21 15 9" /></svg
+          ><span
+            >fog <em>&amp;</em> fern<span class="brand-caption"
+              >HOUSEPLANTS &amp; GOOD THINGS</span
+            ></span
+          ></a
+        >
+        <button
+          class="menu-toggle icon-button"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+        <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+          <a href="/shop.html" aria-current="page">Shop plants</a>
+          <a href="/care.html">Plant care</a>
+          <a href="/about.html">Our story</a>
+          <a href="/contact.html">Get in touch</a>
+        </nav>
+        <div class="header-actions">
+          <a
+            class="icon-button search-link"
+            href="/shop.html#plant-search"
+            aria-label="Search plants"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="m16 16 5 5" /></svg
+          ></a>
+          <a class="icon-button" href="/account/login.html" aria-label="Sign in"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M5 21v-2a7 7 0 0 1 14 0v2" /></svg
+          ></a>
+          <a
+            class="bag-link icon-button"
+            href="/cart.html"
+            aria-label="Shopping bag"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M6 7h12l1 13H5L6 7Z" />
+              <path d="M9 8V6a3 3 0 0 1 6 0v2" /></svg
+            ><span class="cart-count" data-cart-count>0</span></a
+          >
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container breadcrumb">
+        <a href="/index.html">Home</a><span>/</span
+        ><a href="/shop.html">The greenhouse</a><span>/</span
+        ><span>Zebra Haworthia</span>
+      </div>
+      <section class="container product-detail" data-product="haworthia">
+        <div class="detail-image">
+          <img
+            src="/images/products/haworthia.jpg"
+            alt="Zebra Haworthia botanical product photograph"
+            width="1000"
+            height="1100"
+          /><span class="product-badge">Easy care</span>
+        </div>
+        <div class="detail-copy">
+          <p class="eyebrow">A LITTLE NATURE, AT HOME</p>
+          <h1>Zebra Haworthia</h1>
+          <p class="detail-subtitle">Small space. Big personality.</p>
+          <p class="detail-price">$18.00</p>
+          <p>
+            A compact succulent with textured, striped leaves. Just the right
+            amount of green for a desk, shelf, or sunny little nook.
+          </p>
+          <p class="size-note">Small · decorative pot included</p>
+          <div class="purchase-row">
+            <div class="quantity-control">
+              <button
+                type="button"
+                data-quantity-change="-1"
+                aria-label="Decrease quantity"
+              >
+                −</button
+              ><label class="sr-only" for="product-quantity">Quantity</label
+              ><input
+                id="product-quantity"
+                type="number"
+                min="1"
+                max="20"
+                value="1"
+                inputmode="numeric"
+              /><button
+                type="button"
+                data-quantity-change="1"
+                aria-label="Increase quantity"
+              >
+                +
+              </button>
+            </div>
+            <button class="button add-main" id="add-to-bag" type="button">
+              Add to bag
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 7h12l1 13H5L6 7Z" />
+                <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+              </svg>
+            </button>
+          </div>
+          <p class="shipping-note">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 6h11v11H3zM14 10h4l3 4v3h-7" />
+              <circle cx="7" cy="18" r="2" />
+              <circle cx="17" cy="18" r="2" />
+            </svg>
+            Demo delivery: $8 · free on orders $75+
+          </p>
+          <div class="detail-care">
+            <div>
+              <span>LIGHT / USE</span>
+              <p>Bright, indirect light</p>
+            </div>
+            <div>
+              <span>WATER / CARE</span>
+              <p>Let the soil dry fully between waterings</p>
+            </div>
+          </div>
+          <details open>
+            <summary>A few good things to know</summary>
+            <p>
+              This is a student shop prototype. Product photos are illustrative
+              and plants naturally vary in shape, size, and color. No real
+              orders or payments are processed.
+            </p>
+          </details>
+          <details>
+            <summary>Bringing it home</summary>
+            <p>
+              Use the shopping bag to explore the checkout demo. The bag stays
+              in this browser. Visit our
+              <a href="/faq.html">delivery FAQ</a> for more details.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">HAPPIER TOGETHER</p>
+            <h2>A little more green.</h2>
+          </div>
+          <a class="text-link" href="/shop.html"
+            >Back to the greenhouse
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 12h16m-6-6 6 6-6 6" /></svg
+          ></a>
+        </div>
+        <div class="product-grid related-products">
+          <article
+            class="product-card"
+            data-id="monstera"
+            data-category="foliage"
+            data-easy="false"
+            data-name="Monstera Deliciosa"
+            data-price="3800"
+          >
+            <div class="product-photo">
+              <a
+                href="/products/monstera.html"
+                aria-label="View Monstera Deliciosa"
+                ><img
+                  src="/images/products/monstera.jpg"
+                  alt="Monstera Deliciosa botanical product photograph"
+                  width="600"
+                  height="700"
+                  loading="lazy"
+              /></a>
+              <span class="product-badge">Bestseller</span>
+              <button
+                class="quick-add"
+                type="button"
+                data-add="monstera"
+                aria-label="Add Monstera Deliciosa to bag"
+              >
+                +
+              </button>
+            </div>
+            <div class="product-heading">
+              <h3><a href="/products/monstera.html">Monstera Deliciosa</a></h3>
+              <span>$38.00</span>
+            </div>
+            <p>A little statement. A lot of green.</p>
+          </article>
+          <article
+            class="product-card"
+            data-id="rubber-plant"
+            data-category="foliage"
+            data-easy="true"
+            data-name="Rubber Plant"
+            data-price="3200"
+          >
+            <div class="product-photo">
+              <a
+                href="/products/rubber-plant.html"
+                aria-label="View Rubber Plant"
+                ><img
+                  src="/images/products/rubber-plant.jpg"
+                  alt="Rubber Plant botanical product photograph"
+                  width="600"
+                  height="700"
+                  loading="lazy"
+              /></a>
+              <span class="product-badge">Easy care</span>
+              <button
+                class="quick-add"
+                type="button"
+                data-add="rubber-plant"
+                aria-label="Add Rubber Plant to bag"
+              >
+                +
+              </button>
+            </div>
+            <div class="product-heading">
+              <h3><a href="/products/rubber-plant.html">Rubber Plant</a></h3>
+              <span>$32.00</span>
+            </div>
+            <p>Glossy leaves, quiet confidence.</p>
+          </article>
+          <article
+            class="product-card"
+            data-id="cactus"
+            data-category="succulents"
+            data-easy="true"
+            data-name="Desert Cactus"
+            data-price="1600"
+          >
+            <div class="product-photo">
+              <a href="/products/cactus.html" aria-label="View Desert Cactus"
+                ><img
+                  src="/images/products/cactus.jpg"
+                  alt="Desert Cactus botanical product photograph"
+                  width="600"
+                  height="700"
+                  loading="lazy"
+              /></a>
+              <span class="product-badge">Easy care</span>
+              <button
+                class="quick-add"
+                type="button"
+                data-add="cactus"
+                aria-label="Add Desert Cactus to bag"
+              >
+                +
+              </button>
+            </div>
+            <div class="product-heading">
+              <h3><a href="/products/cactus.html">Desert Cactus</a></h3>
+              <span>$16.00</span>
+            </div>
+            <p>Your sunny windowsill companion.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/index.html"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M19 4C7 2 2 9 6 16s15 3 13-12Z" />
+              <path d="M4 21 15 9" /></svg
+            ><span>fog <em>&amp;</em> fern</span></a
+          >
+          <p>
+            A little nature for your everyday.<br />Rooted in San Francisco.
+          </p>
+          <span class="footer-note">A student storefront concept.</span>
+        </div>
+        <div>
+          <h2>Find your green</h2>
+          <a href="/shop.html">All plants &amp; essentials</a
+          ><a href="/shop.html?collection=easy-care">Easy-care favorites</a
+          ><a href="/care.html">Care journal</a>
+        </div>
+        <div>
+          <h2>Around here</h2>
+          <a href="/about.html">Our story</a
+          ><a href="/contact.html">Get in touch</a
+          ><a href="/faq.html">Delivery &amp; FAQs</a
+          ><a href="/account/login.html">Your account</a>
+        </div>
+        <div>
+          <h2>A little good in your inbox</h2>
+          <p>Plant notes, growing tips, and fresh arrivals.</p>
+          <form class="newsletter-form demo-form" data-form-kind="newsletter">
+            <fieldset data-demo-fields disabled>
+              <label class="sr-only" for="newsletter-email"
+                >Email address</label
+              >
+              <div class="email-field">
+                <input
+                  id="newsletter-email"
+                  type="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                  maxlength="254"
+                /><button type="submit" aria-label="Subscribe to newsletter">
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 12h16m-6-6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+              <p class="form-status" role="status"></p>
+            </fieldset>
+          </form>
+          <small>Newsletter sign-ups are saved in our PostgreSQL database; no emails are sent.</small>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Fog &amp; Fern · CSC 317</span
+        ><span>Made with a little care, and a lot of green.</span>
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <noscript
+      ><div class="no-script">
+        JavaScript and a connected database are needed to load live products, accounts, and forms.
+      </div></noscript
+    >
+  </body>
+</html>
