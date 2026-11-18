@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fog &amp; Fern — thoughtfully chosen houseplants and everyday growing essentials. A CSC 317 student storefront prototype."
+    />
+    <meta name="theme-color" content="#243f32" />
+    <title>Practice checkout | Fog &amp; Fern</title>
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/catalog.js" defer></script>
+    <script src="/js/cart.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/checkout.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">
+      A greener kind of everyday <span aria-hidden="true">✦</span> Free practice
+      delivery on orders $75+
+    </div>
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="brand" href="/index.html" aria-label="Fog and Fern home"
+          ><svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 4C7 2 2 9 6 16s15 3 13-12Z" />
+            <path d="M4 21 15 9" /></svg
+          ><span
+            >fog <em>&amp;</em> fern<span class="brand-caption"
+              >HOUSEPLANTS &amp; GOOD THINGS</span
+            ></span
+          ></a
+        >
+        <button
+          class="menu-toggle icon-button"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+        <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+          <a href="/shop.html">Shop plants</a>
+          <a href="/care.html">Plant care</a>
+          <a href="/about.html">Our story</a>
+          <a href="/contact.html">Get in touch</a>
+        </nav>
+        <div class="header-actions">
+          <a
+            class="icon-button search-link"
+            href="/shop.html#plant-search"
+            aria-label="Search plants"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="m16 16 5 5" /></svg
+          ></a>
+          <a class="icon-button" href="/account/login.html" aria-label="Sign in"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M5 21v-2a7 7 0 0 1 14 0v2" /></svg
+          ></a>
+          <a
+            class="bag-link icon-button"
+            href="/cart.html"
+            aria-label="Shopping bag"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M6 7h12l1 13H5L6 7Z" />
+              <path d="M9 8V6a3 3 0 0 1 6 0v2" /></svg
+            ><span class="cart-count" data-cart-count>0</span></a
+          >
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container breadcrumb">
+        <a href="/cart.html">Shopping bag</a><span>/</span><span>Checkout</span>
+      </div>
+      <section class="container compact">
+        <p class="eyebrow">ONE LAST LITTLE STEP</p>
+        <h1>A greener home awaits.</h1>
+        <p class="demo-notice">
+          Sign in to place a practice order saved in PostgreSQL. No payment is taken and
+          nothing will be shipped; use sample address information.
+        </p>
+      </section>
+      <section class="section container checkout-layout" id="checkout-content">
+        <form id="checkout-form" class="form-card">
+          <fieldset data-demo-fields disabled>
+            <h2>Where should your green go?</h2>
+            <div class="field-grid">
+              <div class="field">
+                <label for="first-name">First name</label
+                ><input
+                  id="first-name"
+                  name="firstName"
+                  autocomplete="given-name"
+                  maxlength="60"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="last-name">Last name</label
+                ><input
+                  id="last-name"
+                  name="lastName"
+                  autocomplete="family-name"
+                  maxlength="60"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="checkout-email">Email address</label
+              ><input
+                id="checkout-email"
+                type="email"
+                name="email"
+                autocomplete="email"
+                maxlength="254"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="street">Street address</label
+              ><input
+                id="street"
+                name="street"
+                autocomplete="street-address"
+                maxlength="120"
+                required
+              />
+            </div>
+            <div class="field-grid">
+              <div class="field">
+                <label for="city">City</label
+                ><input
+                  id="city"
+                  name="city"
+                  autocomplete="address-level2"
+                  maxlength="80"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="state">State</label
+                ><select id="state" name="state" required>
+                  <option value="">Select state</option>
+                  <option value="CA">California</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="zip">ZIP code</label
+                ><input
+                  id="zip"
+                  name="zip"
+                  autocomplete="postal-code"
+                  inputmode="numeric"
+                  pattern="[0-9]{5}(-[0-9]{4})?"
+                  title="Enter a five-digit ZIP code"
+                  required
+                />
+              </div>
+            </div>
+            <p class="form-help">
+              The practice delivery area is California. The sample address entered
+              will be saved with your practice order in PostgreSQL.
+            </p>
+            <label class="checkbox-row"
+              ><input type="checkbox" required /> I understand this is a
+              practice order.</label
+            >
+            <p id="checkout-error" class="form-status" role="alert"></p>
+            <button class="button full-width" type="submit">
+              Save order
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M4 12h16m-6-6 6 6-6 6" />
+              </svg></button
+            ><a class="subtle-link" href="/cart.html">← Back to your bag</a>
+          </fieldset>
+        </form>
+        <aside
+          id="checkout-summary"
+          class="order-summary"
+          aria-label="Order summary"
+        ></aside>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/index.html"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M19 4C7 2 2 9 6 16s15 3 13-12Z" />
+              <path d="M4 21 15 9" /></svg
+            ><span>fog <em>&amp;</em> fern</span></a
+          >
+          <p>
+            A little nature for your everyday.<br />Rooted in San Francisco.
+          </p>
+          <span class="footer-note">A student storefront concept.</span>
+        </div>
+        <div>
+          <h2>Find your green</h2>
+          <a href="/shop.html">All plants &amp; essentials</a
+          ><a href="/shop.html?collection=easy-care">Easy-care favorites</a
+          ><a href="/care.html">Care journal</a>
+        </div>
+        <div>
+          <h2>Around here</h2>
+          <a href="/about.html">Our story</a
+          ><a href="/contact.html">Get in touch</a
+          ><a href="/faq.html">Delivery &amp; FAQs</a
+          ><a href="/account/login.html">Your account</a>
+        </div>
+        <div>
+          <h2>A little good in your inbox</h2>
+          <p>Plant notes, growing tips, and fresh arrivals.</p>
+          <form class="newsletter-form demo-form" data-form-kind="newsletter">
+            <fieldset data-demo-fields disabled>
+              <label class="sr-only" for="newsletter-email"
+                >Email address</label
+              >
+              <div class="email-field">
+                <input
+                  id="newsletter-email"
+                  type="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                  maxlength="254"
+                /><button type="submit" aria-label="Subscribe to newsletter">
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 12h16m-6-6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+              <p class="form-status" role="status"></p>
+            </fieldset>
+          </form>
+          <small>Newsletter sign-ups are saved in our PostgreSQL database; no emails are sent.</small>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Fog &amp; Fern · CSC 317</span
+        ><span>Made with a little care, and a lot of green.</span>
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <noscript
+      ><div class="no-script">
+        JavaScript and a connected database are needed to load live products, accounts, and forms.
+      </div></noscript
+    >
+  </body>
+</html>
